@@ -21,10 +21,9 @@ public class Main {
             modString = addContent(modString, mod);
 
             System.out.println("Current string: " + modString);
-            System.out.println();
 
-            option = s.nextInt();
             gui();
+            option = s.nextInt();
         }
 
         //shows boolean truth value to containing substring through bool-returning method + ibid
@@ -33,17 +32,17 @@ public class Main {
             mod = s.next();
 
             System.out.println("Contains substring?: " + checkSubstring(modString, mod));
-            System.out.println();
 
-            option = s.nextInt();
             gui();
+            option = s.nextInt();
         }
 
         //prints length through length-checking method + ibid
         while (option == 3) {
+            System.out.println("Length: " + outputLength(modString));
 
-            System.out.println(outputLength(modString));
             gui();
+            option = s.nextInt();
         }
 
         //prints substring of string after prefix after taking it as an input + ibid
@@ -53,11 +52,9 @@ public class Main {
             mod = s.next();
 
             System.out.println(afterPrefixOutput(modString, mod));
-            System.out.println();
 
-            option = s.nextInt();
             gui();
-
+            option = s.nextInt();
         }
 
         //prints substring of string before suffix after taking it as an input + ibid
@@ -67,10 +64,9 @@ public class Main {
             mod = s.next();
 
             System.out.println(beforeSuffixOutput(modString, mod));
-            System.out.println();
 
-            option = s.nextInt();
             gui();
+            option = s.nextInt();
         }
 
         //prints between prefix and suffix + ibid
@@ -83,10 +79,9 @@ public class Main {
             mod2 = s.next();
 
             System.out.println(betweenOutput(modString, mod, mod2));
-            System.out.println();
 
-            option = s.nextInt();
             gui();
+            option = s.nextInt();
         }
 
         //just prints exit text
